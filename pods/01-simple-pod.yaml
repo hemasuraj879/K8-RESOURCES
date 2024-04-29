@@ -18,5 +18,5 @@ metadata:
 
 spec:
   containers:
-  - name: maven
-    image: maven
+  - name: nginx
+    image: nginx
