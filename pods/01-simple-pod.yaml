@@ -1,11 +1,21 @@
+# apiVersion: v1
+# kind: Pod
+# metadata:
+#   name: single-pod
+
+# spec:
+#   containers:
+#   - name: nginx
+#     image: nginx 
+#     ports: 
+#     - containerPort: 80
+
 apiVersion: v1
 kind: Pod
-metadata:
-  name: single-pod
+metadata: 
+  name: pod_02
 
 spec:
   containers:
-  - name: nginx
-    image: nginx 
-    ports: 
-    - containerPort: 80
+  - name: maven
+    image: maven
