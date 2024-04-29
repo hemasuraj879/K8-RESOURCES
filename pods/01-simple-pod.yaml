@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: single-pod
+
+spec:
+  containers:
+  - name: NGINX
+    image: nginx 
+    port: 80
