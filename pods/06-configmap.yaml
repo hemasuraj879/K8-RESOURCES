@@ -5,6 +5,6 @@ metadata:
   namespace: roboshop
 
 data:
-  MONGO: true
+  MONGO: present
   MONGO_URL: mongodb://<MONGODB-SERVER-IPADDRESS>:27017/catalogue
 
