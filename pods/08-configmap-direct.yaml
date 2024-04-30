@@ -1,0 +1,19 @@
+apiVersion: v1
+kinbd: Pod
+metadata:
+  name: cofig-map-ref-direct
+  namespace: roboshop
+  labels:
+    environment: dev
+    project: roboshop
+
+spec:
+  containers:
+  - name: cofig-map-ref-direct
+    image: nginx
+    imagePullPolicy: Always
+    ports:
+    - containerPorts: 80
+    envFrom:
+    - configMapRef:
+      name: config-map
