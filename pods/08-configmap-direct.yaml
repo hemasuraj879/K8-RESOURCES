@@ -13,7 +13,7 @@ spec:
     image: nginx
     imagePullPolicy: Always
     ports:
-    - containerPorts: 80
+    - containerPort: 80
     envFrom:
     - configMapRef:
       name: config-map
