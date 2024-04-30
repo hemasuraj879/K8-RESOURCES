@@ -1,0 +1,28 @@
+apiVersionb: v1
+kind: Pod
+metadata:
+  name: environment
+  namespace: roboshop
+  labels:
+    environment: dev
+    project: roboshop
+
+spec:
+  containers:
+  - name: environment
+    image: nginx
+    port:
+    - containerPort: 80
+    resources:
+      requests:
+        memory:
+        cpu:
+      limits:
+        memory:
+        cpu:
+    env:
+    - name: MONGO
+      value: "true"
+    - name: MONGO_URL
+      value: "mongodb://<MONGODB-SERVER-IPADDRESS>:27017/catalogue"
+      
