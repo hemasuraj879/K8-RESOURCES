@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: resources
+  namespace: roboshop
+  labels:
+    environment: dev
+    project: roboshop
+
+spec:
+  containers:
+  - name: resource
+    image: nginx
+    ports:
+    - containerPort: 80
+    resources:
+      requests: #soft limit just like a minimum
+        memory: "64Mi"
+        cpu: "250m"
+      limits: # hard limit just like a maximum
+        memory: "128Mi"
+        cpu: "500m"
