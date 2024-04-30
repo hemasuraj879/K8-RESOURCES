@@ -16,4 +16,4 @@ spec:
     - containerPort: 80
     envFrom:
     - configMapRef:
-      name: config-map
+        name: config-map
