@@ -1,4 +1,4 @@
-apiVersionb: v1
+apiVersion: v1
 kind: Pod
 metadata:
   name: environment
@@ -25,4 +25,4 @@ spec:
       value: "true"
     - name: MONGO_URL
       value: "mongodb://<MONGODB-SERVER-IPADDRESS>:27017/catalogue"
-      
+
