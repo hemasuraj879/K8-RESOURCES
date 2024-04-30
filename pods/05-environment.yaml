@@ -11,7 +11,7 @@ spec:
   containers:
   - name: environment
     image: nginx
-    port:
+    ports:
     - containerPort: 80
     resources:
       requests:
