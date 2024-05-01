@@ -30,6 +30,6 @@ spec:
     project: roboshop
   ports:
   - name: nginx-port
-    protocal: TCP
+    protocol: TCP
     port: 80
     targetPort: nginx-server
