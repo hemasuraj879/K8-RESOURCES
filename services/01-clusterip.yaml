@@ -32,4 +32,4 @@ spec:
   - name: cluster-ip-port
     protocol: TCP
     port: 8080
-    targetport: nginx-port
+    targetPort: nginx-port
