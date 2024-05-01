@@ -30,7 +30,7 @@ spec:
     project: roboshop
   ports:
   - name: nodeport-ip
-    protocol: tcp
+    protocol: TCP
     port: 80
     targetPort: nginx-port
   
