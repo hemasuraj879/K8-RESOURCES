@@ -1,0 +1,34 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: clusterip
+  namspace: roboshop
+  labels:
+    enviroment: dev
+    project: roboshop
+
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    imagePullPolicy: Always
+    ports:
+    - containerPort: 80
+      name: nginx-port
+
+---
+
+apiVersion: v1
+kind: Service
+metatdata:
+  name: clusterip
+
+spec:
+  selector:
+    enviroment: dev
+    project: roboshop
+  ports:
+  - name: cluster-ip-port
+    protocol: TCP
+    port: 8080
+    targetport: nginx-port
